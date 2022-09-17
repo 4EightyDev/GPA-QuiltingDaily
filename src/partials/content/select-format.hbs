@@ -1,0 +1,51 @@
+
+<figure id="selectFormat" class="bg-light p-4 border rounded-3 mb-0">
+     <figcaption class="small mb-3">Please select print or digital.</figcaption>
+     <form id="purchaseOptions">
+          <div id="formatSelector" class="mb-3 d-flex align-items-center justify-content-center" role="tablist" aria-label="Tab Toggle">
+               <input type="radio" class="btn-check" id="print-tab" name="options" autocomplete="off" />
+               <label class="format format-print w-100 me-2 btn btn-secondary border rounded-3 p-2 ps-3 mb-3 d-flex align-items-center justify-content-between active" id="print-tab" data-bs-toggle="tab" data-bs-target="#print-tab-pane" type="button" role="tab" aria-controls="print-tab-pane" aria-selected="true">
+                    <h6 class="my-0 text-center">Print</h6>
+                    <div class="checkbox bg-white border rounded-2">
+                         {{> partials/components/checkbox}}
+                    </div>
+               </label>
+               <input type="radio" class="btn-check" id="digital-tab" name="options" autocomplete="off" />
+               <label class="format format-digital w-100 me-2 btn btn-secondary border rounded-3 p-2 ps-3 mb-3 d-flex align-items-center justify-content-between" id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital-tab-pane" type="button" role="tab" aria-controls="digital-tab-pane" aria-selected="false">
+                    <h6 class="my-0 text-center">Digital</h6>
+                    <div class="checkbox bg-white border rounded-2">
+                         {{> partials/components/checkbox}}
+                    </div>
+               </label>
+          </div>
+          <div id="formatContent" class="tab-content">
+               <div id="print-tab-pane" class="tab-pane fade show active" role="tabpanel" aria-labelledby="print-tab" tabindex="0">
+                    <figcaption class="small mb-3">Select quantity.</figcaption>
+                    <div class="add-to-cart d-flex align-items-center justify-content-between position-relative">
+                         <input class="form-control form-control w-25 me-2" type="text" placeholder="Qty" aria-label="Qty">
+                         <a class="btn btn-secondary btn-accent w-100"><i class="fa-light fa-shopping-cart me-3"></i>Add to Cart</a>
+                    </div>
+               </div>
+               <div id="digital-tab-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="digital-tab" tabindex="0">
+                    <figcaption class="small mb-3">Please select your country.</figcaption>
+                    <div class="country-selector d-flex align-items-center justify-content-between px-3 mb-3" role="tablist" aria-label="Tab Toggle">
+                         <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="countryOptions" id="countryUS" value="US" checked>
+                              <label class="form-check-label" for="countryUS">US</label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="countryOptions" id="countryCanada" value="Canada">
+                              <label class="form-check-label" for="countryCanada">Canada</label>
+                         </div>
+                         <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="countryOptions" id="countryIntnl" value="Intnl">
+                              <label class="form-check-label" for="countryIntnl">Intnl</label>
+                         </div>
+                    </div>
+                    <div class="add-to-cart d-flex align-items-center justify-content-between position-relative">
+                         <a class="btn btn-secondary btn-accent w-100"><i class="fa-light fa-shopping-cart me-3"></i>Add to Cart</a>
+                    </div>
+               </div>
+          </div>
+     </form>
+</figure>

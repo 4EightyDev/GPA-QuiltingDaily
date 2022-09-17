@@ -1,0 +1,25 @@
+{
+     "name": "vite",
+     "version": "1.0.0",
+     "description": "",
+     "main": "index.js",
+     "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "serve": "npm run build && vite preview"
+     },
+     "keywords": [],
+     "author": "",
+     "license": "ISC",
+     "devDependencies": {
+          "@types/node": "^18.7.16",
+          "sass": "^1.54.9",
+          "vite": "^3.1.0"
+     },
+     "dependencies": {
+          "@popperjs/core": "^2.11.6",
+          "bootstrap": "^5.2.1",
+          "bs5-lightbox": "^1.8.0",
+          "vite-plugin-handlebars": "^1.6.0"
+     }
+}

@@ -1,0 +1,15 @@
+
+<!-- Header -->
+<header id="siteHeader" class="bg-white">
+     {{> partials/structure/header/sub-nav}}
+     {{> partials/structure/header/primary-nav}}
+</header>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+     <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+     </div>
+     <div class="offcanvas-body">
+          {{> partials/structure/header/sub-nav-navbar}}
+     </div>
+</div>
