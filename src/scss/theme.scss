@@ -3,6 +3,8 @@
 // Import Global Theme Styles
 @import "./_theme-variables";
 
+a:hover {cursor: pointer;}
+
 // Custom Theme Components
 .btn-accent {
      color: white!important;
