@@ -75,6 +75,9 @@ input.btn-check+label:not(.active) {
           width: 75%;
      }
 }
+.related-product img {
+     max-width: 200px;
+}
 
 // Import Custom Theme Variables
 @import "./_theme-variables";

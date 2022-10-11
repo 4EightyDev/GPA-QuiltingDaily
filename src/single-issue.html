@@ -2,30 +2,36 @@
 <html lang="en">
 {{> partials/structure/open}}
 
-          <section id="commerceSection" class="row">
-               <div id="productImages" class="col-sm-5 col-md-6 col-lg-3 py-3 pt-md-3">
-                    <div class="sticky-lg-top pt-4 mt-n4">
-                         <div class="d-sm-none">
+          <section id="commerceSection" class="container-xl pb-5">
+               <div class="row">
+                    <div id="productImages" class="col-sm-5 col-md-6 col-lg-3 py-3 pt-md-3">
+                         <div class="sticky-lg-top pt-4 mt-n4">
+                              <div class="d-sm-none">
+                                   {{> partials/content/product-title}}
+                              </div>
+                              {{> partials/content/product-images}}
+                         </div>
+                    </div>
+                    <div id="productDetails" class="col-sm-12 col-lg-5 order-3 order-lg-2 py-3 py-md-2 py-lg-5">
+                         <div class="d-none d-lg-block">
                               {{> partials/content/product-title}}
                          </div>
-                         {{> partials/content/product-images}}
+                         {{> partials/content/product-reviews}}
+                         {{> partials/content/product-info}}
                     </div>
-               </div>
-               <div id="productDetails" class="col-sm-12 col-lg-5 order-3 order-lg-2 py-3 py-md-2 py-lg-5">
-                    <div class="d-none d-lg-block">
-                         {{> partials/content/product-title}}
-                    </div>
-                    {{> partials/content/product-reviews}}
-                    {{> partials/content/product-info}}
-               </div>
-               <aside id="sidebar" class="col-sm-7 col-md-6 col-lg-4 order-2 order-lg-3 py-3 py-md-5">
-                    <div class="sticky-lg-top pt-4 mt-n4">
-                         <div class="d-none d-sm-block d-lg-none">
-                              {{> partials/content/product-title}}
+                    <aside id="sidebar" class="col-sm-7 col-md-6 col-lg-4 order-2 order-lg-3 py-3 py-md-5">
+                         <div class="sticky-lg-top pt-4 mt-n4">
+                              <div class="d-none d-sm-block d-lg-none">
+                                   {{> partials/content/product-title}}
+                              </div>
+                              {{> partials/content/buybox-single-issue}}
                          </div>
-                         {{> partials/content/buybox-single-issue}}
-                    </div>
-               </aside>
+                    </aside>
+               </div>
           </section>
+
+          {{> partials/content/related-products}}
+
+          {{> partials/content/magazine-reviews}}
 
 {{> partials/structure/close }}
