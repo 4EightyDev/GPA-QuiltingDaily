@@ -1,9 +1,13 @@
 
-<div id="productTitle" class="d-flex align-items-center align-items-md-end justify-content-between mb-4">
+<div id="productTitle" class="d-flex align-items-center align-items-md-end justify-content-between">
      <div id="title" class="me-3 position-relative">
-          <h4 class="fw-bolder">Quick + Easy Quilts</h4>
-          <h6 id="edition" class="text-primary">Edition: October/November 2022</h6>
-          <div class="small mb-1 text-muted visually-hidden">SKU: EQEQ22004</div>
+          <div class="add-to-favs mt-2 me-2 d-inline">
+               <input type="checkbox" class="btn-check" id="btn-fav" checked autocomplete="off">
+               <label class="active fa-light fa-heart text-primary" for="btn-fav"></label>
+          </div>
+          <h4 class="fw-bolder d-inline">Quick + Easy Quilts</h4>
+          <h6 id="edition" class="text-primary d-inline">October/November 2022</h6>
+          {{> partials/components/star-rating}}
      </div>
      <div id="price">
           <h5 class="fs-2 text-primary position-relative">

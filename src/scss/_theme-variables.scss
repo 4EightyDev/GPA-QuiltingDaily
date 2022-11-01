@@ -11,9 +11,6 @@ $breadcrumb-margin-bottom: 0;
 $enable-negative-margins: true;
 $breadcrumb-font-size: 0.85rem;
 $font-weight-base: 300;
+
 $nav-tabs-link-active-color: $primary;
-$nav-link-hover-color: var(--bs-gray-600);
-$nav-tabs-border-radius: 0;
-$nav-tabs-border-color: transparent;
-$nav-tabs-link-active-border-color: transparent;
-$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-bg: var(--bs-light);
